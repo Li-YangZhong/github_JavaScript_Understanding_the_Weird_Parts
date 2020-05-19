@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        var greeting = function(name) {
+            return 'Hello ' + name;
+        }('John')
+
+        console.log(greeting)
+
+        3;
+
+        'I am a string';
+
+        {
+            name: 'John'
+        };
+
+        var firstname = 'John';
+        var greeting ='Hola';
+        (function(name) {
+            var greeting = 'Inside IIFE: Hello';
+            console.log( greeting + ' ' + name);
+        }(firstname));
+ 
+        (function(name) {
+            var greeting = 'Inside IIFE: Hello';
+            console.log( greeting + ' ' + name);
+        })(firstname);
+        console.log(greeting)
+    </script>
+</body>
+</html>

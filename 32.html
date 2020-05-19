@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // by value
+        var a = 3
+        var b
+
+        b = a;
+        a = 2;
+
+        console.log(a) // 2
+        console.log(b) // 3
+
+        // by reference (all objects (including funtions))
+
+        var c = { greeting: 'hi'}
+        var d
+
+        d = c
+
+        c.greeting = 'hello'
+
+        console.log(c)
+        console.log(d)
+
+        // by reference (even as parameters)
+
+        function changeGreeting(obj) {
+            obj.greeting = 'Hola'
+        }
+
+        changeGreeting(d)
+
+        console.log(c)
+        console.log(d)
+
+        // equals operator sets up new memory space (new address)
+        c = { greeting: 'howdy'}
+        console.log(c)
+        console.log(d)
+    </script>
+</body>
+</html>

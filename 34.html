@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        var arr = new Array(1,2,3,4);
+
+        // alert(arr);
+
+        var arr2 = [
+            1,
+            false,
+            {
+                name: 'Tony',
+                address: '111 Main St.'
+            },
+            function(name) {
+                var greeting = 'Hello ';
+                return greeting + name;
+            },
+            'hello'
+        ]
+
+        // alert(arr2)
+        alert(arr2[3](arr2[2].name))
+    </script>
+</body>
+</html>

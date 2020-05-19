@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        function greet(firstname, lastname, language, ...other) {
+
+            language = language || 'en'
+
+            if (language === 'en') {
+                console.log('Hello ' + firstname + ' ' + lastname)
+            }
+            if (language === 'es') {
+                console.log('Hola ' + firstname + ' ' + lastname)
+            }
+        }
+        function greetEnglish(firstname, lastname) {
+            greet(firstname, lastname, 'en');
+        }
+
+        function greetSpanish(firstname, lastname) {
+            greet(firstname, lastname, 'es')
+        }
+        greetEnglish('John', 'Doe', 'en')
+        greetSpanish('John', 'Doe', 'es')
+
+    </script>
+</body>
+</html>

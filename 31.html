@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        greet();
+
+        function greet() {
+            console.log('hi')
+        }
+
+    /*     anonymousGreet()
+
+        var anonymousGreet = function() {
+            console.log('hi')
+        } */
+
+        function log(a) {
+            
+            a()
+        }
+
+        log(function() {
+            console.log('hi')
+        })
+    </script>
+</body>
+</html>
